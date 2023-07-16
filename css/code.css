@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    font-size: 40x;
+    color: hotpink;
+    font-family: 'Courier New', Courier, monospace;
+}
+.long_and_skinny{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: ultra-expanded;
+    line-height: 85%;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+.sides{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    10% { color: orange; }
+    20% { color: brown; }
+    30% { color: yellow; }
+    40% { color: yellowgreen; }
+    50% { color: green; }
+    60% { color: teal; }
+    70% { color: lightseagreen; }
+    80% { color: lightblue; }
+    90% { color: white; }
+    100% { color: black; }
+  }
