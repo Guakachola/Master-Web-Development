@@ -103,3 +103,8 @@ tr:nth-child(even){
     left: 400;
 }
 /*test*/
+.itworks{
+    font-size: 600px;
+    color: green;
+
+}
