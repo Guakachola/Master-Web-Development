@@ -1,41 +1,53 @@
 <html>
     <head>
-        <title>The Potato</title>
+        <title>PvZ</title>
         <link rel="stylesheet" type="text/css" href="css/code.css" >
     </head>
     <body>
         <header height="100">
-            <h1><i>The Potato</i></h1>
+            <h1 class="center" style="font-size: 80px;"><i>PvZ</i></h1>
          <br /><br /><br />
             
 
         </header>
-        <header>
+        <header style="text-align: center;">
             <img src="Plants_vs_Zombies_logo.png" alt="Its the Plants vs Zombies Photo"/>
-            <a href="https://open.spotify.com/track/1IAbX6hQ1uy3tan7AaJ65d?si=8be2742968644d3a">Link to an amazing song:</a>
         </header>
 
         <section id="side-form">
             <h2>Pick Favorite </h2>
+            <!--Be care with tables because they dont look really nice and shouldn't structure your website-->
+                <table>
+                    <form method="GET" action="php/info.php">
+                    <tr>
+                        <th class="rainbow">Good Side</th>
+                        <th class="rainbow">Bad Side</th>
+                    </tr>
+                    <tr>
 
-            <form method="GET" action="php/info.php">
-                <h4 class="sides">Good Side</h4>
-                <input name="Good-Side" type="radio" value="Peashooter"/> Peashooter<br />
-                <input name="Good-Side" type="radio" value="Wall-nut"/> Wall-nut<br />
-                <input name="Good-Side" type="radio" value="Puff-Shroom"/> Puff-Shroom<br />
-                <h4 class="sides">Bad Side</h4>
-                <input name="Bad-Side" type="radio" value="Zombie"/> Zombie<br />
-                <input name="Bad-Side" type="radio" value="Gargantuar"/> Gargantuar<br />
-
-
-                <h2>Info</h2>
-                <input name="first_name" placeholder="First Name" class="sm-input" /><br />
-                <input name="last_name" placeholder="Last Name" class="sm-input" /><br />
-                <input name="zip" placeholder="Zip Code" class="sm-input"/><br />
+                        <td><input name="Good-Side" type="radio" value="Peashooter"/> Peashooter</td>
+                        <td><input name="Bad-Side" type="radio" value="Zombie"/> Zombie</td>
+                        
+                    </tr>    
+                    <tr>
+                        <td><input name="Good-Side" type="radio" value="Wall-nut"/> Wall-nut</td>
+                        <td><input name="Bad-Side" type="radio" value="Gargantuar"/> Gargantuar</td>
+                    </tr>
+                    <tr>
+                        <td><input name="Good-Side" type="radio" value="Puff-Shroom"/> Puff-Shroom</td>
+                        <td><input name="Bad-Side" type="radio" value="Imp"/> Imp</td>
+                    </tr>
+                </table>
                 
-                <h4>Color</h4>
+                <section class="info">
+                <h2>Info</h2>
+                    <input name="first_name" placeholder="First Name" class="sm-input" /><br />
+                    <input name="last_name" placeholder="Last Name" class="sm-input" /><br />
+                    <input name="zip" placeholder="Zip Code" class="sm-input"/><br />
+
+                    <h4>Color</h4>
                 <select name="color">
-                    <option value="placeholder">-choose color-</option>"
+                    <option value="placeholder" style="text-decoration: line-through;">-choose color-</option>
                     <option value="blue">blue</option>
                     <option value="green">green</option>
                     <option value="yellow">yellow</option>
@@ -45,11 +57,14 @@
                 <br />
                 <br />
                 <button value="submit">Submit Response</button>
+                </section>
+
+                
             </form>
     </section>
 
         <section>
-            <h4 id="title">Day in the Life of a PeaShooter</h4>
+            <h4 id="title" style="font-size: x-large; letter-spacing: 5px;">Day in the Life of a PeaShooter</h4>
         <p title="This was made with chat gpt dont tell anyone" class="long_and_skinny">In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
             What was once a harmonious garden has now become a battleground for supremacy in the culinary world.
             In the sprawling garden, the pea shooter woke up with the first rays of sunlight, ready for another day of defending its beloved turf. 
@@ -73,10 +88,15 @@
         </section>
 
         <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1IAbX6hQ1uy3tan7AaJ65d?utm_source=generator" width="10%" height="144" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <a href="https://open.spotify.com/track/1IAbX6hQ1uy3tan7AaJ65d?si=8be2742968644d3a">Link to an amazing song:</a>
         -->
-        <section>
+        <div id="fixed">
+            Jesus is Lord
+        </div>
+
+        <section class="sticky" style="display: inline-block;"> 
             
-            <img width="250" height="239" src="./PeaShooter_Spit.gif">
+            <img style="width: 250px; height: 239px;"src="./PeaShooter_Spit.gif">
             <br />
             <div>
                 <div class="box" >

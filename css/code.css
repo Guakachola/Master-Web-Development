@@ -1,7 +1,12 @@
 /* use !important to overide specificity. but be wary... it stays forever*/
+p{
+    text-align: left;
+    text-indent: 10px;
+    letter-spacing: 3px;
+}
 
 body{
-    background-color: antiquewhite;
+    background-color: #faebd7;
 }
 h1{
     font-size: 40x;
@@ -9,13 +14,13 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 .long_and_skinny{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
     font-stretch: ultra-expanded;
     line-height: 85%;
     font-weight: bolder;
     font-variant: small-caps;
 }
-h4.sides{
+.rainbow{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation: color-change 1s infinite;
     animation:  duration timing-function delay iteration-count direction fill-mode;
@@ -37,14 +42,63 @@ h4.sides{
 
  #title ,.center{
     text-align: center;
+    text-shadow: 2px 1px black;
   }
+  
 
-#fine_print{
-    font-size: xx-small;
-}
 .box{
     width: 300px;
     border: 15px solid green;
     padding: 0px;
     margin: 20px;
+    display: inline-block;
+}
+
+img{
+    position: sticky;
+    width: 600;
+    height: auto;
+}
+a:hover{
+    color:crimson;
+}
+th,td{
+    border-bottom:1px solid black;
+    width: fit-content;
+    vertical-align: middle;
+    horizontal-align: center;
+    padding: 30px;
+}
+th{
+    background-color: greenyellow;
+}
+tr:hover{
+    background-color: bisque;
+}
+/*
+Messes with the hover style:
+tr:nth-child(even){
+    background-color: #ffdfb6;
+}
+*/
+#fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    border: 1px solid darkgreen;
+    background-color: aquamarine; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sticky{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}
+.info{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    top: 542;
+    left: 400;
 }
