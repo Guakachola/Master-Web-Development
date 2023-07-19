@@ -1,3 +1,5 @@
+/* use !important to overide specificity. but be wary... it stays forever*/
+
 body{
     background-color: antiquewhite;
 }
@@ -13,11 +15,13 @@ h1{
     font-weight: bolder;
     font-variant: small-caps;
 }
-.sides{
+h4.sides{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation: color-change 1s infinite;
+    animation:  duration timing-function delay iteration-count direction fill-mode;
 }
 @keyframes color-change {
+    /*This makes a weird rainbow, its not a rainbow*/
     0% { color: red; }
     10% { color: orange; }
     20% { color: brown; }
@@ -30,3 +34,17 @@ h1{
     90% { color: white; }
     100% { color: black; }
   }
+
+ #title ,.center{
+    text-align: center;
+  }
+
+#fine_print{
+    font-size: xx-small;
+}
+.box{
+    width: 300px;
+    border: 15px solid green;
+    padding: 0px;
+    margin: 20px;
+}

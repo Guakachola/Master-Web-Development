@@ -11,13 +11,14 @@
 
         </header>
         <header>
-            <img src="Plants_vs_Zombies_logo.png" />
+            <img src="Plants_vs_Zombies_logo.png" alt="Its the Plants vs Zombies Photo"/>
+            <a href="https://open.spotify.com/track/1IAbX6hQ1uy3tan7AaJ65d?si=8be2742968644d3a">Link to an amazing song:</a>
         </header>
 
         <section id="side-form">
             <h2>Pick Favorite </h2>
 
-            <form method="GET" action="pick-side.php">
+            <form method="GET" action="php/info.php">
                 <h4 class="sides">Good Side</h4>
                 <input name="Good-Side" type="radio" value="Peashooter"/> Peashooter<br />
                 <input name="Good-Side" type="radio" value="Wall-nut"/> Wall-nut<br />
@@ -27,9 +28,9 @@
                 <input name="Bad-Side" type="radio" value="Gargantuar"/> Gargantuar<br />
 
 
-                <h2>Address</h2>
-                <input name="city" placeholder="City" class="sm-input" /><br />
-                <input name="state" placeholder="State" class="sm-input" /><br />
+                <h2>Info</h2>
+                <input name="first_name" placeholder="First Name" class="sm-input" /><br />
+                <input name="last_name" placeholder="Last Name" class="sm-input" /><br />
                 <input name="zip" placeholder="Zip Code" class="sm-input"/><br />
                 
                 <h4>Color</h4>
@@ -47,8 +48,8 @@
     </section>
 
         <section>
-            <h4>Day in the Life of a PeaShooter</h4>
-        <p class="long_and_skinny">In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
+            <h4 id="title">Day in the Life of a PeaShooter</h4>
+        <p title="This was made with chat gpt dont tell anyone" class="long_and_skinny">In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
             What was once a harmonious garden has now become a battleground for supremacy in the culinary world.
             In the sprawling garden, the pea shooter woke up with the first rays of sunlight, ready for another day of defending its beloved turf. 
             As the morning dew glistened on its leaves, the pea shooter stretched its thin stem and surveyed the surroundings. 
@@ -65,22 +66,29 @@
             <h2>About Me</h2>
             <p class="long_and_skinny">As a adpet press agent and sneaky spy, I was able to get up close and front with the attacks.
                 This is all due to my bachelors degree of CookShotting from Univeristy of Kitchen Counter(Go Spoons!!!)
-                <a href="#">Here</a> is a link to my offical Spitter account where I spit daily about such problems in this world
+                <a href="./Hello World.html">Here</a> is a link to my offical Spitter account where I spit daily about such problems in this world
                 such as this one.
             </p>
         </section>
 
+        <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1IAbX6hQ1uy3tan7AaJ65d?utm_source=generator" width="10%" height="144" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        -->
         <section>
             
             <img width="250" height="239" src="./PeaShooter_Spit.gif">
             <br />
-            <audio width="400" autoplay>
-                <source src="./02. Crazy Dave (Intro Theme).mp3">
-            </audio>
+            <div>
+                <div class="box" >
+                    <audio controls autoplay muted>
+                        <source src="./plantsvzomb.mp3" > 
+                    </audio>
+                </div>
+            </div>
+            
         </section>
         <footer>
             <div>&copy; 2023<br />
-            <a href="#" style="font-size: xx-small;">Terms of Service(please read carefully)</a>
+            <a href="#" id="fine_print">Terms of Service(please read carefully)</a>
         </div>
         </footer>
     </body>
