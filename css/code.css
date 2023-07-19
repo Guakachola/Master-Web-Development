@@ -101,10 +101,21 @@ tr:nth-child(even){
     height: auto;
     top: 542;
     left: 400;
+    float: left;
 }
 /*test*/
 .itworks{
     font-size: 600px;
     color: green;
+
+}
+.paragraph{
+    display: inline-block;
+    width: 535;
+    height: 472;
+    padding: 0px;
+    position: relative;
+    left: 20%;
+
 
 }
