@@ -52,6 +52,7 @@ h1{
     padding: 0px;
     margin: 20px;
     display: inline-block;
+    border-radius: 5;
 }
 
 img{
@@ -118,4 +119,13 @@ tr:nth-child(even){
     left: 20%;
 
 
+}
+
+@media screen and (max-width: 480px){
+    body{
+        font-size: xx-large;
+    }
+    img,.side-form{
+        display: none;
+    }
 }
