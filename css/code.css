@@ -97,12 +97,10 @@ tr:nth-child(even){
     left: 0;
 }
 .info{
-    position: absolute;
-    width: 25px;
+    padding: 30px;
+    vertical-align: top;
+    width: 200px;
     height: auto;
-    top: 542;
-    left: 400;
-    float: left;
 }
 /*test*/
 .itworks{
@@ -111,14 +109,11 @@ tr:nth-child(even){
 
 }
 .paragraph{
-    display: inline-block;
+    background-color: gray;
     width: 535;
     height: 472;
-    padding: 0px;
-    position: relative;
-    left: 20%;
-
-
+    padding: 40px;
+    border: 2px solid antiquewhite;
 }
 
 @media screen and (max-width: 480px){
@@ -128,4 +123,7 @@ tr:nth-child(even){
     img,.side-form{
         display: none;
     }
+}
+.side-form,.info,.paragraph{
+    display: inline-block;
 }

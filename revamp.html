@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/revamp.css" >
+        <title>bootstrap revamp</title>
+    </head>
+    <body>
+        <div class="container">'
+        <img src="Plants_vs_Zombies_logo.png" alt="Its the Plants vs Zombies Photo"/>
+
+        <section>
+            <h2>Pick Favorite </h2>
+            <!--Be care with tables because they dont look really nice and shouldn't structure your website-->
+                <table class="table">
+                    <form method="GET" action="php/info.php">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="rainbow">Good Side</th>
+                            <th class="rainbow">Bad Side</th>
+                        </tr>
+                    </thead>
+                    <tr>
+
+                        <td><input name="Good-Side" type="radio" value="Peashooter"/> Peashooter</td>
+                        <td><input name="Bad-Side" type="radio" value="Zombie"/> Zombie</td>
+                        
+                    </tr>    
+                    <tr>
+                        <td><input name="Good-Side" type="radio" value="Wall-nut"/> Wall-nut</td>
+                        <td><input name="Bad-Side" type="radio" value="Gargantuar"/> Gargantuar</td>
+                    </tr>
+                    <tr>
+                        <td><input name="Good-Side" type="radio" value="Puff-Shroom"/> Puff-Shroom</td>
+                        <td><input name="Bad-Side" type="radio" value="Imp"/> Imp</td>
+                    </tr>
+                </table>
+        </section>
+        <section>
+            <h1>Info</h1>
+                <form style="margin: 25px;">
+                    <div class="form-group">
+                        <input name="first_name" placeholder="First Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input name="last_name" placeholder="Last Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input name="zip" placeholder="Zip Code" class="form-control"/>
+                    </div>
+                </form>
+            <h4>Color</h4>
+                <form>
+                <select name="color">
+                    <option value="placeholder" style="text-decoration: line-through;">-choose color-</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                </select>
+                    <br />
+                    <br />
+                    <button value="submit" class="btn btn-primary">Submit Response</button>
+                </form>
+            </section>
+        <br/>
+        <section class="paragraph">
+            <h4>Day in the Life of a PeaShooter</h4>
+        <p>In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
+            What was once a harmonious garden has now become a battleground for supremacy in the culinary world.
+            In the sprawling garden, the pea shooter woke up with the first rays of sunlight, ready for another day of defending its beloved turf. 
+            As the morning dew glistened on its leaves, the pea shooter stretched its thin stem and surveyed the surroundings. 
+            It knew that lurking beyond the garden's borders were hordes of zombies, hungry for the taste of its cherished plants.</p>
+        <p>With determination in its eyes, the pea shooter stood tall, its pea pods filled to the brim. As the zombies began their relentless march, the pea shooter wasted no time. 
+            It spat out a rapid succession of peas, each propelled with remarkable precision. The peas soared through the air, finding their marks and slowing the advancing undead. 
+            The pea shooter's heart swelled with pride as it held the line, protecting its fellow plants from harm.</p>
+        <p>As the day wore on, the pea shooter never wavered. Its relentless barrage of peas continued, providing a steady stream of defense against the relentless zombies. 
+            The garden remained a sanctuary of vibrant colors and delicate fragrances, thanks to the unwavering dedication of the pea shooter. 
+            And as the sun began to set, casting a warm golden glow across the garden, the pea shooter rested, knowing it had fulfilled its duty and safeguarded the beauty that surrounded it.</p>
+        </section>
+        <br /><br /><br /><br />
+        <section>
+        <div class="card" style="width: 18rem;">
+            <img src="PeaShooter_Spit.gif" class="card-img-top" alt="..."   height="239" width="250">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+
+    </body>
+</html>
