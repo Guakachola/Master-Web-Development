@@ -6,12 +6,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/revamp.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("img").slideUp(2000);
+                });
+                $("#show").click(function(){
+                    $("img").slideDown(2000);
+                });
+            });
+        </script>
         <title>bootstrap revamp</title>
     </head>
     <body>
         <div class="container">'
         <img src="Plants_vs_Zombies_logo.png" alt="Its the Plants vs Zombies Photo"/>
-
+        <br/>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
         <section>
             <h2>Pick Favorite </h2>
             <!--Be care with tables because they dont look really nice and shouldn't structure your website-->
@@ -68,7 +81,7 @@
         <br/>
         <section class="paragraph">
             <h4>Day in the Life of a PeaShooter</h4>
-        <p>In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
+        <p id="fun">In a shocking turn of events, the peaceful world of herbs has been thrown into chaos as scallions and garlic rise up against their leafy counterparts. 
             What was once a harmonious garden has now become a battleground for supremacy in the culinary world.
             In the sprawling garden, the pea shooter woke up with the first rays of sunlight, ready for another day of defending its beloved turf. 
             As the morning dew glistened on its leaves, the pea shooter stretched its thin stem and surveyed the surroundings. 
@@ -106,7 +119,10 @@
                 <a href="./pvz-plants-vs-zombies.gif" class="btn btn-primary">In-depth Look</a>
             </div>
         </div>
+        <button type="button" onclick='document.getElementById("fun").innerHTML = "hello everybody"'>Click Me</button>
         </div>
+
+
 
     </body>
 </html>
